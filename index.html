@@ -1,3 +1,11 @@
+<!-- 
+
+This is not a Mixpanel product, nor has it gone through a formal review process.
+Please be careful making any decisions based on this code; we are not responsible for the results.
+
+-->
+
+
 <!doctype html>
 <html>
 <head>
@@ -16,7 +24,7 @@
 	<script>
 	  var event_name = 'Comment';
 	  var segment_by = 'Word List';
-	  var num_days = 30;
+	  var num_days = 7;
 		var query = MP.api.segment(event_name, segment_by, {
 			from: moment().subtract(num_days - 1, 'days'),
 			to: moment(),
